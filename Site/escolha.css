@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    background-color: lightblue;
+    font-family: 'Kanit', sans-serif;
+}
+
+.quest{
+    text-align:  center;
+    background-color: rgb(36, 33, 33);
+    padding: 5em;
+    width:  30%;
+    margin-left: 30%;
+    border-radius: 20px;
+    margin-top: 15%;
+    color: #fff;
+}
+
+#dieta{
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input[type="submit"]{
+    margin: 10px;
+    border-radius: 5px;
+    background-color: rgb(36, 100, 36);
+    color: #fff;
+    border:  none;
+    padding: 15px;
+    width: 220px;
+}

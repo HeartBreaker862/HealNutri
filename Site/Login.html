@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <script>
+            // Função para mostrar o popup e carregar a imagem
+            function mostrarPopup() {
+              var popupContainer = document.getElementById('popup-container');
+              var imagemPopup = document.getElementById('imagemPopup');
+              popupContainer.style.display = 'block';
+        
+              // Defina o caminho da imagem aqui
+              imagemPopup.src = 'TestePulso.jpg';
+            }
+        
+            // Função para fechar o popup
+            function fecharPopup() {
+              document.getElementById('popup-container').style.display = 'none';
+            }
+        
+            // Adiciona um ouvinte de evento ao botão para chamar a função mostrarPopup() quando clicado
+            document.getElementById('mostrarPopup').addEventListener('click', mostrarPopup);
+          </script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport"content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Tudo/Css/login.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@600&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="Foto_de_...-removebg-preview.png" type="image/x-icon">
+        <title>Login</title>
+    </head>
+    <header>
+        <div class="logo">
+        <img src="HEALNUTRI.png" width="20%">
+        </div>
+    </header>
+
+    <body>
+        <div id="login">
+            <form method="post" action="login.php" class="card">
+                <div class="card-header">
+                     <h2>Login</h2> 
+                </div>
+
+                <div class="card-content">
+                    <div class="card-content-area">
+                        <label for="usuario">E-Mail</label>
+                        <input type="email" name="login" id="usuario" autocomplete="off">
+                    </div>
+
+                    <div class="card-content-area">
+                        <label for="password">Senha</label>
+                        <input type="password" name="senha" id="password" autocomplete="off">
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <input type="submit" value="Entrar" class="submit" name="entrar"><br>
+                    <a href="passwordreset.html" class="esqueceu_senha">Esqueceu a senha?</a>
+                </div>
+                <div class="card-content-area">
+                                    <!-- Botão para mostrar/ocultar imagem -->
+                <button id="botaoMostrarOcultar" type="button" onclick="toggleImagem()">Ajuda com Biotipo</button>
+
+                <!-- Imagem -->
+                <img id="imagem" src="TestePulso.jpg" alt="Imagem" width="80%">
+
+                <script>
+                    // Função para mostrar/ocultar a imagem
+                    function toggleImagem() {
+                    var imagem = document.getElementById('imagem');
+                    // Alterna entre 'block' (mostrar) e 'none' (ocultar)
+                    imagem.style.display = (imagem.style.display === 'none' || imagem.style.display === '') ? 'block' : 'none';
+                    }
+                </script>
+                </div>
+            </form>
+
+          <div class="registro">
+              <div class="corpo">
+                <div class="titulo">
+                    <h2>Registrar</h2> 
+                <form action="register.php" method="post">
+               </div>
+
+                <div class="card-content">
+                    <div class="card-content-area">
+                        <label for="usuario">Nome</label>
+                        <input type="text" name="nome" id="usuario" autocomplete="off">
+                    </div>
+
+                    <div class="card-content-area">
+                        <label for="usuario">E-Mail</label>
+                        <input type="email" name="login" id="usuario" autocomplete="off">
+                    </div>
+
+                
+                    <div class="card-content-area">
+                        <label for="password">Definir senha</label>
+                        <input type="password" name="senha" id="password" minlength="8" maxlength="16" autocomplete="off">
+                    </div>
+                
+                    <div class="card-content-area">
+                        <label for="altura">Altura (cm)</label>
+                        <input type="number" name="altura" id="altura" min="1" max="300" required>
+                    </div>
+
+                    <div class="card-content-area">
+                        <label for="peso">Peso (kg)</label>
+                        <input type="number" name="peso" id="peso" min="1" max="500" required>
+                    </div>
+
+                    <div class="card-content-area">
+                        <label for="idade">Idade</label>
+                        <input type="number" name="idade" id="idade" min="1" max="150" required>
+                    </div>
+                    <div class="card-content-area">
+                        <label for="genero">Sexo</label>
+                    <select name="genero" id="genero" required>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                    </select>
+                </div>
+                <div class="card-content-area">
+                        <label for="meta">Biotipo/Metabolismo</label>
+                    <select name="biotipo" id="biotipo" required>
+                        <option value="Mesomorfo">Mesomorfo</option>
+                        <option value="Endomorfo">Endomorfo</option>
+                        <option value="Ectomorfo">Ectomorfo</option>
+                    </select>
+                </div>
+            <div class="card-content-area">
+                <label for="nivel_atividade" id="atividade">Nivel de Atividade:</label>
+                <select name="nivel_atividade" id="atividade" required>
+                    <option value="1.2">Sedentário</option>
+                    <option value="1.3">Levemente Ativo</option>
+                    <option value="1.5">Ativo Moderado</option>
+                    <option value="1.7">Muito Ativo</option>
+                </select><br>                
+        </div>
+            
+    </div>
+
+                <div class="card-footer">
+                    <input type="submit" value="Registrar" class="submit">
+                </div>
+            </div>
+            </form>
+            </div>
+            </div>
+        </div>
+    </body>
+
+</html>

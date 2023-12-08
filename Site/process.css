@@ -1,0 +1,40 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.408);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.head {
+    text-align: center;
+    
+}
+
+body {
+    background-color: rgba(46, 255, 150, 0.412);
+    font-family: 'Kanit', sans-serif;
+}
+
+.but {
+    text-align: center;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    display: flex;
+    margin: auto;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+   width: 200px;
+}

@@ -1,0 +1,27 @@
+body {
+    background-image: linear-gradient(to left, lightgreen , darkgreen);
+    font-family: 'Kanit', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+.form {
+    border-radius: 5px;
+    padding: 40px;
+    color: white;
+    font-family: 'Wix Madefor Display', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type=submit] {
+    cursor: pointer;
+    background-color: lightgreen;
+}
+
+input[type=email] {
+    background-color: lightgray;
+}

@@ -1,0 +1,48 @@
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
+.tit {
+    text-align: center;
+    text-shadow: 0.3px 0.3px;
+    
+}
+
+.page {
+    box-shadow: 2px 2px 2px;
+    padding: 20px;
+    background-color: rgba(211, 211, 211, 0.349);
+}
+
+.text {
+    text-shadow: 1px 1px;
+}
+
+header {
+    box-shadow: 2px 2px 2px;
+}
+
+a {
+    text-align: center;
+    background-color: rgba(211, 211, 211, 0.605);
+    margin: auto;
+    width: 100px;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 3px 3px 10px;
+    display: flex;
+}
+
+a:hover{
+    text-align: center;
+    background-color: rgba(40, 40, 40, 0.605);
+    margin: auto;
+    width: 100px;
+    padding: 5px;
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+    box-shadow: 3px 3px 10px;
+    display: flex;
+    transition: 0.3s;
+}
